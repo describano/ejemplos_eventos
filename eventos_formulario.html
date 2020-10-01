@@ -1,0 +1,28 @@
+<!-- Ejemplo onload event -->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+ <!-- script javascript     -->
+<script>
+function funcion_nom() {
+  var nom = document.getElementById("name").value;
+  alert ('bienvenido ' + nom)
+}
+
+function funcion_edad() {
+  var age = document.getElementById("age").value;
+  alert ('con ' + age + ' ya tendrás el carnet de conducir. ¿no?')
+}
+
+</script>
+</head>
+
+<body >
+<h1>Eventos HTML</h1>
+Introduce tu nombre:  <input type="text" id="name" onblur="funcion_nom()">
+Introduce tu edad: <input type="text" id="age" onchange="funcion_edad()">
+
+<p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+</body>
